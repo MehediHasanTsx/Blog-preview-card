@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     border: 0;
     margin: 0;
@@ -29,6 +31,7 @@ body {
     width: 100vw;
     background-color: var(--bg-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -42,19 +45,108 @@ body {
     border: 1px solid var(--gray-950);
     box-sizing: border-box;
     box-shadow: 8px 8px 0px 0px var(--gray-950);
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
 }
 
 .image img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-radius: 10px;
 }
 
+.sub_section {
+    width: 100%;
+    padding-top: var(--spacing-xl);
+    /* height: 194px; */
+    height: fit-content;
+    box-sizing: border-box;
+
+}
+
+.sub_section .learning {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: var(--font-size-sm);
+    background-color: #F4D04E;
+    text-align: center;
+    width: 82px;
+    height: 29px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.sub_section .learning:hover {
+    cursor: pointer;
+}
+
+.sub_section .date {
+    font-family: var(--font-primary);
+    padding-top: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.sub_section .button {
+    width: 336px;
+    height: 36px;
+    color: var(--gray-950);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    padding-top: var(--spacing-lg);
+}
+
+.sub_section .button:hover {
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.sub_section .explain {
+    width: fit-content;
+    height: 72px;
+    padding-top: var(--spacing-lg);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-md);
+    color: var(--gray-500);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.profile {
+    width: 129px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-top: var(--spacing-xl);
+    gap: 12px;
+}
+
+.profile img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.profile .name {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 800;
+    color: var(--gray-950);
+}
+
 .attribution {
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 600;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
